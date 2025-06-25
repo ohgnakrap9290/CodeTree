@@ -9,7 +9,7 @@ int main(){
     else if((b>a)&&(c>b)||(a<b)&&(c>b)){
         cout <<b;
     }
-    else{
+    else if((c<a)&&(c>b)||(c>a)&&(c<b)){
         cout <<c;
     }
 
