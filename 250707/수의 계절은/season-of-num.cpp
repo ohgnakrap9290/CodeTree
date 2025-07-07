@@ -12,7 +12,7 @@ int main() {
         cout << "Summer";
     }
     else if (M >= 9 && M <= 11) {
-        cout << "Autumn";
+        cout << "Fall";
     }
     else if (M == 12 || M == 1 || M == 2) {
         cout << "Winter";
