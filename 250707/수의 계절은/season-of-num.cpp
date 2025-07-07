@@ -2,20 +2,21 @@
 using namespace std;
 
 int main() {
-    // Please write your code here.
-    int dnjf;
-    cin >>dnjf;
-    if(dnjf>=3&&dnjf<=5){
-        cout<<"Spring";
+    int M;
+    cin >> M;
+
+    if (M >= 3 && M <= 5) {
+        cout << "Spring";
     }
-    else if(dnjf>=6&&dnjf<=8){
-        cout<<"Summer";
+    else if (M >= 6 && M <= 8) {
+        cout << "Summer";
     }
-    else if(dnjf>=9&&dnjf<=11){
-        cout<<"Autumn";
+    else if (M >= 9 && M <= 11) {
+        cout << "Autumn";
     }
-    else{
-        cout<<"Winter";
+    else if (M == 12 || M == 1 || M == 2) {
+        cout << "Winter";
     }
+
     return 0;
 }
