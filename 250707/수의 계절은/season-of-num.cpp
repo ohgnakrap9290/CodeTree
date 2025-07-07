@@ -4,6 +4,7 @@ using namespace std;
 int main() {
     // Please write your code here.
     int dnjf;
+    cin >>dnjf;
     if(dnjf>=3&&dnjf<=5){
         cout<<"Spring";
     }
