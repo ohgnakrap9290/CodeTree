@@ -8,7 +8,7 @@ int main() {
     if(a<=0){
         cout<<0;
     }
-    else if(a%2==0){
+    else{
         for(int i=0;i<b;i++){
             cout<<a;
         }
