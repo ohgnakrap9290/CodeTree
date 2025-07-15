@@ -6,7 +6,7 @@ int main() {
     int cnt=0,n;
     cin>>n;
     while(n<1000){
-        if(n/2==0){
+        if(n%2==0){
             n=n*3+1;
             cnt+=1;
         }
@@ -15,6 +15,6 @@ int main() {
             cnt+=1;
         }
     }
-    cout<<cnt-1;
+    cout<<cnt;
     return 0;
 }
