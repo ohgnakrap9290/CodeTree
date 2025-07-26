@@ -16,7 +16,7 @@ int main() {
             }
             if(total==i){
             cnt+=1;
-        }
+            }
         }
         
 
