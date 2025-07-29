@@ -8,6 +8,9 @@ int main() {
         cin>>n;
         total+=n;
     }
+    cout<<fixed;
+    cout.precision(1);
     cout<<total/8;
+    
     return 0;
 }
