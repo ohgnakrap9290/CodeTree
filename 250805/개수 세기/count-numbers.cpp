@@ -11,6 +11,6 @@ int main() {
             cnt+=1;
         }
     }
-    cout<<m;
+    cout<<cnt;
     return 0;
 }
