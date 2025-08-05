@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     // Please write your code here.
     int n,q,array[100],num,a,s,e;
-    bool exit=false;
+    
     cin>>n>>q;
     for(int i=0;i<n;i++){
         cin>>array[i];
@@ -16,6 +16,7 @@ int main() {
             cout<<array[num-1];
         }
         if(a==2){
+            bool exit=false;
             cin>>num;
             for(int j=0;j<n;j++){
                 if(array[j]==num){
