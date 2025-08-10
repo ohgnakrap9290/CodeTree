@@ -3,9 +3,13 @@ using namespace std;
 
 int main() {
     // Please write your code here.
-    int a,b,a_array[100],b_array[100],idx;
-    bool seq=true;
+    int a,b,a_array[100],b_array[100],idx=-1;
+    bool seq = false;
     cin>>a>>b;
+    if(b>a){
+        cout<<"No";
+        return 0;
+    }
     for(int i=0;i<a;i++){
         cin>>a_array[i];
     }
@@ -14,22 +18,26 @@ int main() {
     }
     for(int i=0;i<a;i++){
         if(a_array[i]==b_array[0]){
-            idx = i;
-            break; 
-        }
-    }
-    for(int i=0;i<b;i++){
-        if(a_array[i+idx]==b_array[i]){
-            continue;
-        }
-        else{
             seq = false;
-            cout <<"No";
-            break;
+            for(int j=0;j<b;j++){
+                if(a_array[j+i]==b_array[j]){
+                    seq = true;
+                }
+                else{
+                    seq = false;
+                    break;
+                }
+            }
+            if(seq){
+                break;
+            }
         }
     }
     if(seq){
         cout<<"Yes";
+    }
+    else{
+        cout <<"No";
     }
     return 0;
 }
