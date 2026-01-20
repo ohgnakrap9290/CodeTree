@@ -8,7 +8,7 @@ int main() {
     for(int i=1;i<=N;i++){
         if(i%a==0){
             cout<<1<<'\n';
-$0
+
         }
         else{
             cout<<0<<'\n';
