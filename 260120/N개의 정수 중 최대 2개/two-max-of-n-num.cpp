@@ -11,9 +11,11 @@ int main() {
         cin >> A[i];
     }
     int max1 = A[0];
-    int max2;
+    int max2=0;
+    // 3 2 3 1 0
+    // 6 5 10 2 5 2 8 9 2 3 
     for(int i=1;i<N;i++){
-        if(A[i]>max1){
+        if(A[i]>=max1){
             max2=max1;
             max1=A[i];
         }
