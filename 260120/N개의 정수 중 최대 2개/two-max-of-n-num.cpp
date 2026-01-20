@@ -11,7 +11,7 @@ int main() {
         cin >> A[i];
     }
     int max1 = A[0];
-    int max2=0;
+    int max2=A[0];
     // 3 2 3 1 0
     // 6 5 10 2 5 2 8 9 2 3 
     for(int i=1;i<N;i++){
@@ -19,7 +19,7 @@ int main() {
             max2=max1;
             max1=A[i];
         }
-        if(A[i]<max1&&A[i]>max2){
+        else if(A[i]<max1&&A[i]>max2){
             max2=A[i];
         }
     }
