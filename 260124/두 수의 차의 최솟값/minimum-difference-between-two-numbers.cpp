@@ -12,8 +12,8 @@ int main() {
     int sub=100;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
-            if(i-j >0 && i-j<sub){
-                sub = i-j;
+            if(arr[i]-arr[j] >0 && arr[i]-arr[j] <sub){
+                sub = arr[i]-arr[j];
             }
         }
     }
